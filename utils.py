@@ -45,7 +45,7 @@ def download_binutils(folder):
         subprocess.run([
             "curl", "-LSs", "-o",
             binutils_tarball.as_posix(),
-            "https://ftp.gnu.org/gnu/binutils/" + binutils_tarball.name
+            "https://mirrors.nju.edu.cn/gnu/binutils/" + binutils_tarball.name
         ],
                        check=True)
         verify_binutils_checksum(binutils_tarball)
