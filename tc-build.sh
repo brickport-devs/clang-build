@@ -11,7 +11,7 @@ function msg() {
 msg "Building LLVM..."
 ./build-llvm.py \
 	--clang-vendor "Rui" \
-	--targets "ARM;AArch64" \
+	--targets "ARM;AArch64;X86" \
 	--pgo kernel-defconfig \
 	--lto thin
 
